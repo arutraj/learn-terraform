@@ -1,11 +1,11 @@
 variable "fruits" {}
 
 output "apple" {
-  value = "Apple Quantity - ${var.fruits["apple"]["quantity"]} , Price - ${var.fruits["apple"]["price"]}"
+  value = "Apple Quantity - ${lookup(var.fruits["apple"], "quantity", 0 )} , Price - ${lookup(var.fruits["apple"], "price", 0.5 )}"
 }
 
 output "banana" {
-  value = "Apple Quantity - ${var.fruits["banana"]["quantity"]} , Price - ${var.fruits["banana"]["price"]}"
+  value = "Apple Quantity - ${lookup(var.fruits["banana"], "quantity", 0 )} , Price - ${lookup(var.fruits["banana"], "price", 0.5 )}"
 }
 
 
