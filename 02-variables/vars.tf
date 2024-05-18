@@ -43,4 +43,9 @@ output "y" {
   value = var.y
 }
 
+variable "env" {}
+output "env" {
+  value = var.env
+}
+
 
