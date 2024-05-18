@@ -7,3 +7,20 @@ resource "aws_instance" "frontend" {
   }
 }
 
+resource "aws_instance" "backend" {
+  ami           = "ami-090252cbe067a9e58"
+  instance_type = "t3.small"
+
+  tags = {
+    Name = "backend"
+  }
+}
+
+resource "aws_instance" "mysql" {
+  ami           = "ami-090252cbe067a9e58"
+  instance_type = "t3.small"
+
+  tags = {
+    Name = "mysql"
+  }
+}
