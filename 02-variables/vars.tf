@@ -53,5 +53,10 @@ output "url" {
   value = var.url
 }
 
+# Data in terraform is three types ,
+# 1. String - Need quoting , Only Double quotes, TF doesn't support single quotes
+# 2. Number - No quotes
+# 3. Boolean - No quotes
+
 
 
