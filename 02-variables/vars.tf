@@ -29,7 +29,7 @@ output "l2" {
 # Map Variable
 variable "m" {
   default = {
-    course = "DevOps"
+    course  = "DevOps"
     trainer = "john"
   }
 }
