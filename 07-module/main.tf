@@ -1,5 +1,5 @@
 module "sample" {
-  source = "./sample-module"
+  source = "sample-module"
   fruits = var.fruits
 }
 
